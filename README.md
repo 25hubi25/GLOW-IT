@@ -4,13 +4,10 @@ Jest to aplikacja firmy, która zajmuje się produkcją oświetlenia.
 
 ## Technologie
 
-Projekt wykorzystuje:
+Projekt aktualnie wykorzystuje:
 * HTML
 * SASS (SCSS)
 * TypeScript
-* React.js
-* PHP
-* SQL
 
 
 ## Instalacja
