@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glow IT!</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/css/style.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Scripts -->
     <script src="dist/app.js" defer></script>
+    
 </head>
 <body>
     <nav>
@@ -43,36 +48,174 @@
         </div>
     </nav>
     <main>
-<!--TODO SLIDER-->
-        <h2>Produkty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2>
-        <div class="products-slider">
-            <div class="slider-wrapper">
-                <div class="arrow left"></div>
-                <div class="products-card"></div>
-                <div class="arrow right"></div>
-            </div>
-            <div class="slider-desc">
-                <div class="slider-desc-wrapper">
-                    <p class="products-name">Taśma SMART LED</p>
-                    <div class="products-price">200.00 zł</div>
+        <div class="card-header">
+            <h2>Produkty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2> 
+        </div>
+        <!--
+        <div class="products-wrapper">
+            <div class="products-card-smaller">
+                <img src="img/product1.png" alt="">
+                <div class="products-desc-smaller">
+                    <h3>Taśma SMART LED</h3>
+                    <div class="products-price-smaller">200.00 zł</div>
                 </div>
-                <button class="add-to-cart">Dodaj do koszyka</button>
             </div>
-        </div>       
+            <div class="products-buy-smaller">
+                <h3>Taśma SMART LED</h3>
+                <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                <button class="add-to-cart-smaller">Dodaj do koszyka</button>
+            </div>
+        </div>
+        -->
+        <!-- Slider main container -->
+        <div class="slider-wrapper">
+            <div class="left-arrow"></div>
+            <div class="swiper productsSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED1</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED2</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED3</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED4</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED5</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED6</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED7</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products-card-smaller">
+                        <img src="img/product1.png" alt="">
+                        <div class="products-desc-smaller">
+                            <h3>Taśma SMART LED8</h3>
+                            <div class="products-price-smaller">200.00 zł</div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="right-arrow"></div>
+        </div>
         <div class="horizontal-border-wrapper">
             <div class="horizontal-border"></div>
         </div>
-        <h2>Efekty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2>
-        <div class="products-slider efects">
-            <div class="slider-wrapper">
-                <div class="arrow left"></div>
-                <div class="products-card"></div>
-                <div class="arrow right"></div>
+        <div class="card-header">
+            <h2>Efekty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2>
+        </div>
+        <!--
+        <div class="wrapper">
+            <div class="slider">
+                <div class="effects">
+                    <img src="img/effects1.png" alt="" class="effects-image">
+                </div>
             </div>
         </div>
+        -->
+
+        <div class="slider-wrapper">
+            <div class="effects-left"></div>
+            <div class="swiper effectsSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects1.png" class="effects-image" alt="">
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects2.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects3.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects4.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects5.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects6.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects7.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="effects">
+                        <img src="img/effects8.png" class="effects-image" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="effects-right"></div>
+        </div>
+        
         <div class="horizontal-border-wrapper">
             <div class="horizontal-border"></div>
-        </div>
+        </div>     
         <h2>Dlaczego <span class="mark">GLOW <span class="mark-it">IT</span></span>?</h2>
         <div class="pros-wrapper">
             <div class="pros-element">
@@ -144,6 +287,7 @@
     <!--TODO FOOTER-->
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-    <!-- Script -->
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

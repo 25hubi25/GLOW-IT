@@ -31,7 +31,6 @@ newsletterSubmit.addEventListener("click", () => {
     }
 });
 
-
 const productImages:string[] = [
     "/img/product1.png",
     "/img/product2.png",
@@ -42,6 +41,7 @@ const productImages:string[] = [
     "/img/product7.png",
     "/img/product8.png"
 ];
+
 
 const effectsImages:string[] = [
     "/img/effects1.png",

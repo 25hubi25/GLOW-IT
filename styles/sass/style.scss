@@ -1,3 +1,4 @@
+@import 'mixins';
 @import 'variables';
-@import 'mobile';
-@import 'desktop';
+@import 'mobile/mobile.scss';
+@import 'desktop/desktop.scss';

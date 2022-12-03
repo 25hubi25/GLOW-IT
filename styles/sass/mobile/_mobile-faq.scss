@@ -1,0 +1,60 @@
+main {
+    .faq-wrapper {
+        @include flex-jcc-fdc;
+        h3 {
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+        .question {
+            @include flex-aic;
+            justify-content: space-between;
+            .expand {
+                background-color: $main;
+                border: 1px solid $yellow;
+                border-radius: 25px;
+                width: 3.5rem;
+                height: 3.5rem;
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease;
+            p {
+                padding-top: 1rem;
+                line-height: 1.5;
+            }
+        }
+        .faq {
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            cursor: pointer;
+        }
+        .faq.active{
+            .answer {
+                max-height: 300px;
+                animation: fade 1s ease-in-out;
+            }
+        }
+        .faq.active {
+            button {
+                transform: rotate(90deg);
+            }
+        }
+        button {
+            transition: transform 0.5s ease-in;
+        }
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(-1rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0rem);
+            }
+        }
+    }
+}

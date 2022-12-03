@@ -1,52 +1,5 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  background-color: #472360;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-}
-
-.mark {
-  font-weight: 700;
-}
-
-.mark-it {
-  color: #FCDC00;
-}
-
-.vertical-border {
-  background-color: #FCDC00;
-  width: 2px;
-  height: 45px;
-}
-
-.horizontal-border-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 35px 0;
-}
-
-.horizontal-border {
-  background-color: #FCDC00;
-  width: 250px;
-  height: 1px;
-}
-
 .hamburger {
-  z-index: 2;
+  z-index: 3;
   width: 49px;
   height: 49px;
   background: url("https://api.iconify.design/charm/menu-hamburger.svg?color=white&width=49") no-repeat center center/contain;
@@ -121,6 +74,7 @@ nav #mobile-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 2;
 }
 nav #mobile-nav a {
   color: white;
@@ -136,15 +90,19 @@ nav #mobile-nav .horizontal-border {
 }
 
 main {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #472360;
-  padding: 20px;
+  padding: 2rem;
 }
 main .search-wrapper input {
   border: 1px #FCDC00 solid;
@@ -188,29 +146,46 @@ main h2 {
   font-weight: 400;
   margin: 20px 0;
 }
-main .products-wrapper {
+main .left-arrow, main .effects-left {
+  background: url("https://api.iconify.design/bi/arrow-left-circle.svg?color=white&width=35&height=35") no-repeat center center/contain;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.5rem;
+}
+main .right-arrow, main .effects-right {
+  background: url("https://api.iconify.design/bi/arrow-right-circle.svg?color=white&width=35&height=35") no-repeat center center/contain;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 0.5rem;
+}
+main .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-main .products-wrapper .products-card {
-  background: url("/img/product1.png") no-repeat center center/contain;
-  border-radius: 10px;
+main .products-card-smaller {
+  border-radius: 1rem;
   border: 1px #FCDC00 solid;
-  width: 300px;
+  width: 215px;
   height: 300px;
+  background-color: #391a4b;
 }
-main .products-wrapper .products-desc {
+main .products-card-smaller img {
+  width: 213px;
+  height: 213px;
+  border-radius: 1rem 1rem 0 0;
+}
+main .products-desc-smaller {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,139 +201,45 @@ main .products-wrapper .products-desc {
           flex-direction: column;
   text-align: center;
   font-size: 1.1rem;
+  height: 85px;
 }
-main .products-wrapper .products-desc .products-name {
-  font-weight: 700;
-}
-main .products-wrapper .products-desc .products-price {
-  margin: 15px;
-}
-main .products-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 20px 0;
-}
-main .products-menu p {
-  margin: 0 20px;
-  font-size: 2rem;
-  font-variant-caps: small-caps;
-}
-main .products-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-main .products-slider .slider-wrapper {
-  height: 200px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-main .products-slider .products-card {
-  background: url("/img/product1.png") no-repeat center center/contain;
-  border-radius: 10px;
-  border: 1px #FCDC00 solid;
-  width: 200px;
-  height: 200px;
-}
-main .products-slider .arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 200px;
-}
-main .products-slider .left {
-  background: url("https://api.iconify.design/bi/arrow-left-circle.svg?color=white&width=50&height=50") no-repeat center center/contain;
-}
-main .products-slider .right {
-  background: url("https://api.iconify.design/bi/arrow-right-circle.svg?color=white&width=50&height=50") no-repeat center center/contain;
-}
-main .products-slider .slider-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-main .products-slider .slider-desc-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1.5rem;
-  width: 150px;
-  margin-top: 10px;
-}
-main .add-to-cart {
-  background-color: #472360;
+main .products-desc-smaller .products-price-smaller {
+  margin: 1rem;
   border: 1px solid #FCDC00;
-  border-radius: 10px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  width: 200px;
-  height: 30px;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 3px 25px;
+  background-color: #391a4b;
 }
-main .products-price {
-  background-color: #fff;
-  border-radius: 10px;
-  height: 2rem;
-  width: 15rem;
-  margin: 10px 0;
-  color: #472360;
-  font-weight: 700;
+main h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .products-buy-smaller {
+  display: none;
+  width: 213px;
+  height: 298px;
+  background-color: rgba(57, 26, 75, 0.95);
+  position: absolute;
+  border-radius: 1rem;
+  padding: 5px;
+}
+main .products-buy-smaller p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 4rem 0;
+}
+main .products-buy-smaller button {
+  color: #fff;
+  border: solid 1px #FCDC00;
+  border-radius: 1rem;
+  background-color: #4F2668;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+main .products-card-smaller:hover + .products-buy-smaller {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +249,39 @@ main .products-price {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .effects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0 1.5rem;
+}
+main .effects .effects-image {
+  width: 215px;
+  height: 215px;
+  border: solid 1px #FCDC00;
+  border-radius: 10px;
 }
 main .pros-wrapper {
   display: -webkit-box;
@@ -439,11 +352,11 @@ main .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 250px;
 }
 main .newsletter-wrapper {
@@ -517,6 +430,104 @@ main form #newsletter-submit {
   border-radius: 0 10px 10px 0;
   margin-left: -5px;
 }
+
+main .products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .products-wrapper .products-card {
+  border-radius: 10px;
+  border: 1px #FCDC00 solid;
+  width: 280px;
+  height: 400px;
+  background-color: #391a4b;
+}
+main .products-wrapper .products-card img {
+  width: 278px;
+  height: 278px;
+  border-radius: 10px 10px 0 0;
+}
+main .products-wrapper .products-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 120px;
+}
+main .products-wrapper .products-desc .products-price {
+  margin: 15px;
+  border: 1px solid #FCDC00;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 35px;
+  background-color: #391a4b;
+}
+main .products-wrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .products-wrapper .products-buy {
+  display: none;
+  width: 278px;
+  height: 398px;
+  background-color: rgba(57, 26, 75, 0.95);
+  position: absolute;
+  border-radius: 10px;
+  padding: 15px;
+}
+main .products-wrapper .products-buy p {
+  text-align: center;
+  font-size: 14px;
+  margin: 6.5rem 0;
+}
+main .products-wrapper .products-buy button {
+  color: #fff;
+  border: solid 1px #FCDC00;
+  border-radius: 10px;
+  background-color: #4F2668;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  padding: 0.75rem;
+}
+main .products-wrapper .products-card:hover + .products-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 main .faq-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,12 +548,12 @@ main .faq-wrapper .question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .faq-wrapper .question .expand {
   background-color: #472360;
@@ -607,6 +618,7 @@ main .faq-wrapper button {
             transform: translateY(0rem);
   }
 }
+
 main .panel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,4 +710,88 @@ main .no-account {
           flex-direction: column;
   padding: 2rem;
   margin-top: 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #472360;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.mark {
+  font-weight: 700;
+}
+
+.mark-it {
+  color: #FCDC00;
+}
+
+.vertical-border {
+  background-color: #FCDC00;
+  width: 2px;
+  height: 45px;
+}
+
+.horizontal-border-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 35px 0;
+}
+
+.horizontal-border {
+  background-color: #FCDC00;
+  width: 250px;
+  height: 1px;
+}
+
+.swiper {
+  width: 215px;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.effectsSlider {
+  width: 215px;
+  height: 215px;
 }

@@ -1,0 +1,66 @@
+@import 'mobile-menu';
+@import 'mobile-main';
+@import 'mobile-products';
+@import 'mobile-faq';
+@import 'mobile-login';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: $main;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.mark {
+    font-weight: 700;
+}
+
+.mark-it {
+    color: $yellow;
+}
+
+.vertical-border {
+    background-color: $yellow;
+    width: 2px;
+    height: 45px;
+}
+
+.horizontal-border-wrapper {
+    @include flex-jcc;
+    margin: 35px 0;
+}
+
+.horizontal-border {
+    background-color: $yellow;
+    width: 250px;
+    height: 1px;
+}
+
+.swiper {
+    width: 215px;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    border-radius: 1rem;
+    @include flex-jcc-aic;
+}
+
+.slider-wrapper {
+    @include flex-jcc-aic;
+}
+
+.effectsSlider {
+    width: 215px;
+    height: 215px;
+}

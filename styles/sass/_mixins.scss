@@ -1,0 +1,48 @@
+// jcc - justify-content: center;
+// aic - align-items: center;
+// fd - flex-direction
+// fdc - flex-direction: column;
+// fdr - flex-direction: row;
+
+@mixin flex-jcc {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-aic {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-jcc-aic {
+    @include flex-jcc;
+    align-items: center;
+}
+
+@mixin flex-jcc-aic-fd($direction) {
+    @include flex-jcc-aic;
+    flex-direction: $direction;
+}
+
+@mixin flex-jcc-aic-fdc {
+    @include flex-jcc-aic-fd(column);
+}
+
+@mixin flex-jcc-aic-fdr {
+    @include flex-jcc-aic-fd(row);
+}
+
+@mixin flex-jcc-fd($direction) {
+    @include flex-jcc;
+    flex-direction: $direction;
+}
+
+@mixin flex-jcc-fdc {
+    @include flex-jcc-fd(column);
+}
+
+@mixin flex-jc-ai($position1, $position2) {
+    display: flex;
+    justify-content: $position1;
+    align-items: $position2;
+}

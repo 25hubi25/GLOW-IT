@@ -1,0 +1,69 @@
+.hamburger {
+    z-index: 3;
+    width: 49px;
+    height: 49px;
+    background: url('https://api.iconify.design/charm/menu-hamburger.svg?color=white&width=49') no-repeat center center / contain;
+    margin: 0 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.cancel {
+    background: url('https://api.iconify.design/ic/outline-cancel.svg?color=white&width=49&height=49') no-repeat center center / contain;
+}
+
+nav {
+    background-color: $nav;
+    border-bottom: solid 3px $yellow;
+    display: flex;
+    flex-direction: row;
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        img {
+            height: 69px;
+            width: 69px;
+        }
+        h1 {
+            color: #FFF;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 50%;
+        iconify-icon {
+            margin: 5px;
+        }
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        justify-content: center;
+        flex-direction: column;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 2.4rem;
+            margin-left: 5rem;
+        }
+
+        .horizontal-border-wrapper {
+            margin: 0.5rem;
+        }
+        .horizontal-border {
+            width: 35rem;
+        }
+        z-index: 2;
+    }
+}

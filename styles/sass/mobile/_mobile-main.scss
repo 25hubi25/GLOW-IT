@@ -1,0 +1,179 @@
+main {
+    overflow: hidden;
+    @include flex-jcc-fdc;
+    background-color: $main;
+    padding: 2rem;
+    .search-wrapper {
+        input {
+            border: 1px $yellow solid;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: $main;
+            width: 350px;
+            height: 35px;
+            padding: 10px;
+            background: url('https://api.iconify.design/ant-design/search-outlined.svg?color=white') no-repeat center center / contain;
+            background-size: 17px;
+            background-position: 97.5%;
+        }
+        input::placeholder {
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;         
+        }
+    }
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .left-arrow, .effects-left {
+        background: url('https://api.iconify.design/bi/arrow-left-circle.svg?color=white&width=35&height=35') no-repeat center center / contain;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 0.5rem;
+    }
+    .right-arrow, .effects-right {
+        background: url('https://api.iconify.design/bi/arrow-right-circle.svg?color=white&width=35&height=35') no-repeat center center / contain;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 0.5rem;
+    }
+
+    .card-header {
+        @include flex-aic;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .products-card-smaller {
+        img {
+            width: 213px;
+            height: 213px;
+            border-radius: 1rem 1rem 0 0;
+        }
+        border-radius: 1rem;
+        border: 1px $yellow solid;
+        width: 215px;
+        height: 300px;
+        background-color: $darker;
+    }
+    .products-desc-smaller {
+        @include flex-jcc-aic-fdc;
+        text-align: center;
+        font-size: 1.1rem;
+        height: 85px;
+        .products-price-smaller {
+            margin: 1rem;
+            border: 1px solid $yellow;
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 3px 25px;
+            background-color: $darker;
+        }
+    }
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .products-buy-smaller {
+        display: none;
+        width: 213px;
+        height: 298px;
+        background-color: rgba($color: $darker, $alpha: 0.95);
+        position: absolute;
+        border-radius: 1rem;    
+        padding: 5px;
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 4rem 0;
+        }
+        button {
+            color: #fff;
+            border: solid 1px $yellow;
+            border-radius: 1rem;
+            background-color: $nav;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            padding: 0.5rem;
+        }
+    }
+    .products-card-smaller:hover + .products-buy-smaller {
+        @include flex-jcc-aic-fdc;
+    }
+
+    .wrapper {
+        @include flex-jcc-aic;
+    }
+    
+    .effects {
+        @include flex-aic;
+        justify-content: left;
+        margin: 0 1.5rem;
+        .effects-image {
+            width: 215px;
+            height: 215px;
+            border: solid 1px $yellow;
+            border-radius: 10px;
+        }
+    }
+    .pros-wrapper {
+        @include flex-jcc-aic-fdc;
+        .pros-element {
+            @include flex-jcc-aic-fdc;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top: 2.5rem;
+            .pros-header {
+                @include flex-jcc-aic-fdc;
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .logos-wrapper {
+        @include flex-jcc-aic;
+    }
+    .logos {
+        @include flex-aic;
+        justify-content: space-around;
+        width: 250px;
+    }
+    .newsletter-wrapper {
+        @include flex-jcc-aic-fdc;
+    }
+    .newsletter {
+        @include flex-jcc-aic-fdc;
+        text-align: center;
+        width: 300px;
+    }
+    form {
+        margin-top: 20px;
+        input {
+            border: 1px solid $yellow;
+            background-color: #482260;
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+            font-size: 12px;
+            outline: none;
+        }
+        #newsletter-email {
+            border-radius: 10px 0 0 10px;
+        }
+        #newsletter-email::placeholder {
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #newsletter-submit {
+            border-radius: 0 10px 10px 0;
+            margin-left: -5px;
+        }
+    }
+}
