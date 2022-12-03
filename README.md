@@ -18,8 +18,7 @@ Dokładny poradnik dostępny na żądanie w języku czeskim.
 Projekt na ten moment nie jest gotowy.
 
 To Do:
-* Slidery
 * Koszyk
 * Searchbar
+* Logowanie
 * Dostosowanie strony do przeglądarek dekstopowych
-* Backend
