@@ -4,6 +4,7 @@
 @import 'mobile-faq';
 @import 'mobile-login';
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,18 +41,18 @@ body {
 
 .horizontal-border {
     background-color: $yellow;
-    width: 250px;
+    width: 75%;
     height: 1px;
 }
 
 .swiper {
-    width: 215px;
+    width: 100%;
     height: 300px;
 }
 
 .swiper-slide {
     text-align: center;
-    background: #fff;
+    background: $main;
     border-radius: 1rem;
     @include flex-jcc-aic;
 }
@@ -61,6 +62,22 @@ body {
 }
 
 .effectsSlider {
-    width: 215px;
+    width: 100%;
     height: 215px;
+}
+
+.change-direction {
+    .vertical-border {
+        display: none;
+    }
+}
+
+.logos-wrapper {
+    flex-direction: column;
+}
+
+@media (max-width: 400px) {
+    .hide-mobile {
+        display: none;
+    }
 }

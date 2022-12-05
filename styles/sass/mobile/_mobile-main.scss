@@ -58,6 +58,7 @@ main {
         height: 300px;
         background-color: $darker;
     }
+
     .products-desc-smaller {
         @include flex-jcc-aic-fdc;
         text-align: center;
@@ -110,7 +111,6 @@ main {
     
     .effects {
         @include flex-aic;
-        justify-content: left;
         margin: 0 1.5rem;
         .effects-image {
             width: 215px;
@@ -139,6 +139,10 @@ main {
     }
     .logos-wrapper {
         @include flex-jcc-aic;
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
     }
     .logos {
         @include flex-aic;

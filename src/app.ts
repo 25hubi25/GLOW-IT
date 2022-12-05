@@ -1,5 +1,6 @@
 const hamburgerBtn: HTMLButtonElement = document.querySelector(".hamburger");
 const mobileNav = document.getElementById("mobile-nav");
+import type { Swiper } from 'swiper';
 
 hamburgerBtn.addEventListener("click", () => {
     hamburgerBtn.classList.toggle('cancel');
@@ -53,3 +54,25 @@ const effectsImages:string[] = [
     "/img/effects7.png",
     "/img/effects8.png"
 ];
+
+const productsSlider = new Swiper(".productsSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".right-arrow",
+      prevEl: ".left-arrow",
+    },
+});
+
+const effectsSlider = new Swiper(".effectsSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".effects-right",
+      prevEl: ".effects-left",
+    },
+  });

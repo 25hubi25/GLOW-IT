@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- Scripts -->
     <script src="dist/app.js" defer></script>
-    
 </head>
 <body>
     <nav>
@@ -23,11 +22,18 @@
             <a href="index.html"><img src="img/logo.png" alt="logo przedstawiające żarówkę"></a>
             <h1><span class="mark">glow <span class="mark-it"> it!</span></span></h1>
         </div>
+        <div class="hide-mobile" id="desktop-nav">
+            <a href="products.html">PRODUKTY</a>
+            <a href="faq.html">FAQ</a>
+            <a href="faq.html">WSPÓŁPRACA</a>
+            <a href="faq.html">ZWROTY</a>
+            <a href="faq.html">KONTAKT</a>
+        </div>
         <div class="buttons">
             <a href="login.html"><iconify-icon icon="carbon:user-avatar" style="color: white;" width="49" height="49"></iconify-icon></a>
             <iconify-icon icon="icons8:shopping-cart" style="color: white;" width="54" height="54"></iconify-icon>
-            <div class="vertical-border"></div>
-            <button class="hamburger"></button>
+            <div class="vertical-border hide"></div>
+            <button class="hamburger hide"></button>
         </div>
         <div id="mobile-nav" style="display: none;">
             <div class="horizontal-border-wrapper">
@@ -53,13 +59,6 @@
         </div>
         <!--
         <div class="products-wrapper">
-            <div class="products-card-smaller">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc-smaller">
-                    <h3>Taśma SMART LED</h3>
-                    <div class="products-price-smaller">200.00 zł</div>
-                </div>
-            </div>
             <div class="products-buy-smaller">
                 <h3>Taśma SMART LED</h3>
                 <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
@@ -154,16 +153,6 @@
         <div class="card-header">
             <h2>Efekty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2>
         </div>
-        <!--
-        <div class="wrapper">
-            <div class="slider">
-                <div class="effects">
-                    <img src="img/effects1.png" alt="" class="effects-image">
-                </div>
-            </div>
-        </div>
-        -->
-
         <div class="slider-wrapper">
             <div class="effects-left"></div>
             <div class="swiper effectsSlider">
@@ -212,7 +201,6 @@
             </div>
             <div class="effects-right"></div>
         </div>
-        
         <div class="horizontal-border-wrapper">
             <div class="horizontal-border"></div>
         </div>     
@@ -220,21 +208,24 @@
         <div class="pros-wrapper">
             <div class="pros-element">
                 <div class="pros-header">
-                    <iconify-icon icon="tabler:uv-index" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide" icon="tabler:uv-index" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="tabler:uv-index" style="color: white;" width="85" height="85"></iconify-icon>
                     <h3>Brak emisji światła UV</h3>
                 </div>
                 Oświetlenie GLOW IT nie emituje szkodliwego światła UV. Dzięki temu zapewniamy najwyże bezpieczeństwo dla oczu naszych klientów.
             </div>
             <div class="pros-element">
                 <div class="pros-header">
-                    <iconify-icon icon="material-symbols:nest-eco-leaf-outline" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide" icon="material-symbols:nest-eco-leaf-outline" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="material-symbols:nest-eco-leaf-outline" style="color: white;" width="85" height="85"></iconify-icon>
                     <h3>Przyjazność środowisku</h3>
                 </div>
                 Oświetlenie GLOW IT wykorzystuje najnowsze technologie, które maksymalnie ograniczają zanieczyszczanie środowiska.
             </div>
             <div class="pros-element">
                 <div class="pros-header">
-                    <iconify-icon icon="carbon:delivery-parcel" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide" icon="carbon:delivery-parcel" style="color: white;" width="49" height="49"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="carbon:delivery-parcel" style="color: white;" width="85" height="85"></iconify-icon>
                     <h3>30 dni na bezpłatny zwrot</h3>
                 </div>
                 Produkt jednak ci się nie spodobał? Nic straconego!  Jeśli w ciągu 30 dni zwrócisz zakupiony produkt, to GLOW IT zwróci koszty produktu oraz dostawy.
@@ -244,25 +235,36 @@
             <div class="horizontal-border"></div>
         </div>
         <!--TODO LINKI-->
-        <h2>Oni zaufali <span class="mark">GLOW<span class="mark-it"> IT!</span></span></h2>
-        <div class="logos-wrapper">
-            <div class="logos">
-                <iconify-icon icon="simple-icons:eslgaming" style="color: white;" width="41" height="41"></iconify-icon>
-                <iconify-icon icon="cib:intel" style="color: white;" width="55" height="55"></iconify-icon>
-                <iconify-icon icon="simple-icons:cdprojekt" style="color: white;" width="40" height="55"></iconify-icon>
+        <div class="change-direction">
+            <div class="logos-wrapper">
+                <h3>Oni zaufali <span class="mark">GLOW<span class="mark-it"> IT!</span></span></h3>
+                <div class="logos">
+                    <iconify-icon class="hide" icon="simple-icons:eslgaming" style="color: white;" width="41" height="41"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="simple-icons:eslgaming" style="color: white;" width="72" height="72"></iconify-icon>
+                    <iconify-icon class="hide" icon="cib:intel" style="color: white;" width="55" height="55"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="cib:intel" style="color: white;" width="90" height="90"></iconify-icon>
+                    <iconify-icon class="hide" icon="simple-icons:cdprojekt" style="color: white;" width="40" height="50"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="simple-icons:cdprojekt" style="color: white;" width="80" height="90"></iconify-icon>
+                </div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <!--TODO LINKI-->
-        <h2>Tutaj nas znajdziesz!</h2>
-        <div class="logos-wrapper">
-            <div class="logos">
-                <iconify-icon icon="akar-icons:facebook-fill" style="color: white;" width="41" height="41"></iconify-icon>
-                <iconify-icon icon="akar-icons:instagram-fill" style="color: white;" width="41" height="41"></iconify-icon>
-                <iconify-icon icon="akar-icons:twitter-fill" style="color: white;" width="41" height="41"></iconify-icon>
-                <iconify-icon icon="akar-icons:tiktok-fill" style="color: white;" width="40" height="40"></iconify-icon>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
+            </div>
+            <div class="vertical-border"></div>
+            <!--TODO LINKI-->
+            
+            <div class="logos-wrapper social-media">
+                <h3>Tutaj nas znajdziesz!</h3>
+                <div class="logos">
+                    <iconify-icon class="hide" icon="akar-icons:facebook-fill" style="color: white;" width="41" height="41"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="akar-icons:facebook-fill" style="color: white;" width="70" height="70"></iconify-icon>
+                    <iconify-icon class="hide" icon="akar-icons:instagram-fill" style="color: white;" width="41" height="41"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="akar-icons:instagram-fill" style="color: white;" width="70" height="70"></iconify-icon>
+                    <iconify-icon class="hide" icon="akar-icons:twitter-fill" style="color: white;" width="41" height="41"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="akar-icons:twitter-fill" style="color: white;" width="70" height="70"></iconify-icon>
+                    <iconify-icon class="hide" icon="akar-icons:tiktok-fill" style="color: white;" width="40" height="40"></iconify-icon>
+                    <iconify-icon class="hide-mobile" icon="akar-icons:tiktok-fill" style="color: white;" width="70" height="70"></iconify-icon>
+                </div>
             </div>
         </div>
         <div class="horizontal-border-wrapper">
@@ -272,7 +274,8 @@
         <!--TODO SUBMIT-->
         <div class="newsletter-wrapper">
             <div class="newsletter">
-                <iconify-icon icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide" icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide-mobile" icon="ic:outline-local-post-office" style="color: white;" width="80" height="80"></iconify-icon>
                 Chcesz otrzymać 15% zniżki na pierwsze zakupy? Nic prostszego! Po prostu zapisz się do newslettera!
             </div>
             <form onsubmit="sendNewsletter(); return false;">

@@ -1,0 +1,130 @@
+@media screen and (min-width: 1024px) {
+    .hide {
+        display: none;
+    }
+    nav {
+        #desktop-nav {
+            a {
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+                margin: 0 3rem;
+            }
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: $yellow;
+            }
+            @include flex-jcc-aic;
+        }
+    }
+    main {
+        margin: 0 5rem;
+        .left-arrow, .effects-left {
+            width: 7.5rem;
+            height: 7.5rem;
+            margin-right: 2rem;
+        }
+        .right-arrow, .effects-right {
+            width: 7.5rem;
+            height: 7.5rem; 
+            margin-left: 2rem;
+        }
+        .products-card-smaller {
+            img {
+                width: 278px;
+                height: 278px;
+            }
+            width: 280px;
+            height: 400px;
+        }
+        .products-desc-smaller {
+            .products-price-smaller {
+                font-size: 2rem;
+                padding: 3px 40px;
+            }
+        }
+        h2 {
+            margin: 2rem 9.5rem
+        }
+        h3 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .effects {
+            .effects-image {
+                width: 280px;
+                height: 280px;
+                border: solid 1px $yellow;
+                border-radius: 10px;
+            }
+        }
+        .pros-wrapper {
+            flex-direction: row;
+            justify-content: space-around;
+            .pros-element {
+                width: 50rem;
+                font-size: 1.4rem;
+                .pros-header {
+                    h3 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+        .change-direction {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            h3 {
+                font-size: 3.2rem;
+            }
+            .logos-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 50rem;
+            }
+            .vertical-border {
+                display: flex;
+                height: 20rem;
+                width: 1px;
+            }
+        }
+        .newsletter-wrapper {
+            .newsletter {
+                font-size: 1.6rem;
+                width: 50rem;
+            }
+            form {
+                #newsletter-email {
+                    width: 35rem;
+                }
+                #newsletter-submit {
+                    width: 12rem;
+                }
+            }
+        }
+        .pros-wrapper {
+            h3 {
+                margin-top: 1rem;
+            }
+        }
+        .logos {
+            iconify-icon {
+                margin: 2rem 3rem 0 3rem;
+            }
+        }
+    }
+    .swiper {
+        height: 400px;
+    }
+
+    .effectsSlider {
+        height: 280px;
+    }
+
+    .horizontal-border {
+        width: 90%;
+    }
+}
