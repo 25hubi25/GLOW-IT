@@ -21,4 +21,3 @@ To Do:
 * Koszyk
 * Searchbar
 * Logowanie
-* Dostosowanie strony do przeglądarek dekstopowych
