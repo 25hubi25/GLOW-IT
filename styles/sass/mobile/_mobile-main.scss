@@ -33,6 +33,9 @@ main {
         height: 5rem;
         margin-right: 0.5rem;
     }
+    .left-arrow:hover, .effects-left:hover, .right-arrow:hover, .effects-right:hover {
+        cursor: pointer;
+    }
     .right-arrow, .effects-right {
         background: url('https://api.iconify.design/bi/arrow-right-circle.svg?color=white&width=35&height=35') no-repeat center center / contain;
         width: 5rem;

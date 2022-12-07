@@ -152,6 +152,9 @@ main .left-arrow, main .effects-left {
   height: 5rem;
   margin-right: 0.5rem;
 }
+main .left-arrow:hover, main .effects-left:hover, main .right-arrow:hover, main .effects-right:hover {
+  cursor: pointer;
+}
 main .right-arrow, main .effects-right {
   background: url("https://api.iconify.design/bi/arrow-right-circle.svg?color=white&width=35&height=35") no-repeat center center/contain;
   width: 5rem;

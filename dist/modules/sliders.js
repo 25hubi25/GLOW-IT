@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+
 const productsSlider = new Swiper(".productsSlider", {
     breakpoints: {
         0: {

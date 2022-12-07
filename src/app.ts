@@ -1,36 +1,8 @@
 import './modules/sliders.js';
+import './modules/newsletter.js';
+import './modules/menu.js';
+import './modules/faq.js';
 
-const hamburgerBtn: HTMLButtonElement = document.querySelector(".hamburger");
-const mobileNav = document.getElementById("mobile-nav");
-hamburgerBtn.addEventListener("click", () => {
-    hamburgerBtn.classList.toggle('cancel');
-    if (mobileNav.style.display == "none") {
-        mobileNav.style.display = "flex";
-    } else {
-        mobileNav.style.display = "none";
-    }
-});
-
-const faqs = document.querySelectorAll(".faq");
-
-faqs.forEach((faq:HTMLDivElement) => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    });
-});
-
-const newsletterInput: HTMLInputElement = document.querySelector("#newsletter-email");
-const regexEmail:RegExp = /\S+@\S+\.\S+/;
-const newsletterSubmit: HTMLInputElement = document.querySelector("#newsletter-submit");
-
-newsletterSubmit.addEventListener("click", () => {
-    let email:string = (newsletterInput.value);
-    if (regexEmail.test(email)) {
-        console.log(`Wysłano newsletter na ${email}`);
-    } else {
-        console.log("Podany email nie jest poprawny.")
-    }
-});
 
 const productImages:string[] = [
     "/img/product1.png",

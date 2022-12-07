@@ -1,33 +1,7 @@
 import './modules/sliders.js';
-const hamburgerBtn = document.querySelector(".hamburger");
-const mobileNav = document.getElementById("mobile-nav");
-hamburgerBtn.addEventListener("click", () => {
-    hamburgerBtn.classList.toggle('cancel');
-    if (mobileNav.style.display == "none") {
-        mobileNav.style.display = "flex";
-    }
-    else {
-        mobileNav.style.display = "none";
-    }
-});
-const faqs = document.querySelectorAll(".faq");
-faqs.forEach((faq) => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    });
-});
-const newsletterInput = document.querySelector("#newsletter-email");
-const regexEmail = /\S+@\S+\.\S+/;
-const newsletterSubmit = document.querySelector("#newsletter-submit");
-newsletterSubmit.addEventListener("click", () => {
-    let email = (newsletterInput.value);
-    if (regexEmail.test(email)) {
-        console.log(`Wysłano newsletter na ${email}`);
-    }
-    else {
-        console.log("Podany email nie jest poprawny.");
-    }
-});
+import './modules/newsletter.js';
+import './modules/menu.js';
+import './modules/faq.js';
 const productImages = [
     "/img/product1.png",
     "/img/product2.png",
