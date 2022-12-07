@@ -54,8 +54,15 @@ main {
                 font-size: 2rem;
                 padding: 0.75rem;
             }
+            button:hover {
+                cursor: pointer;
+                color: $yellow;
+            }
         }
-        .products-card:hover + .products-buy {
+        .products-card:active, .products-card:hover + .products-buy {
+            @include flex-jcc-aic-fdc;
+        }
+        .products-buy:hover, .products-buy:active + .products-buy {
             @include flex-jcc-aic-fdc;
         }
     }

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="dist/app.js" defer></script>
 </head>
 <body>
     <nav>
@@ -17,11 +18,18 @@
             <a href="index.html"><img src="img/logo.png" alt="logo przedstawiające żarówkę"></a>
             <h1><span class="mark">glow <span class="mark-it"> it!</span></span></h1>
         </div>
+        <div class="hide-mobile" id="desktop-nav">
+            <a href="products.html">PRODUKTY</a>
+            <a href="faq.html">FAQ</a>
+            <a href="faq.html">WSPÓŁPRACA</a>
+            <a href="faq.html">ZWROTY</a>
+            <a href="faq.html">KONTAKT</a>
+        </div>
         <div class="buttons">
             <a href="login.html"><iconify-icon icon="carbon:user-avatar" style="color: white;" width="49" height="49"></iconify-icon></a>
             <iconify-icon icon="icons8:shopping-cart" style="color: white;" width="54" height="54"></iconify-icon>
-            <div class="vertical-border"></div>
-            <button class="hamburger"></button>
+            <div class="vertical-border hide"></div>
+            <button class="hamburger hide"></button>
         </div>
         <div id="mobile-nav" style="display: none;">
             <div class="horizontal-border-wrapper">
@@ -42,105 +50,146 @@
         </div>
     </nav>
     <main>
+        <!--
         <div class="search-wrapper">
             <input type="search" placeholder="Czego szukasz?" id="search-bar">
         </div>
+        -->
         <h2>Produkty <span class="mark">GLOW <span class="mark-it">IT</span></span></h2>
         <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
-            <div class="products-buy">
-                <h3>Taśma SMART LED</h3>
-                <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
-                <button class="add-to-cart">Dodaj do koszyka</button>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
+            </div>
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
-                    <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
-                </div>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
-                    <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
         </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
+        <div class="horizontal-border-wrapper hide">
+            <div class="horizontal-border hide"></div>
         </div>
         <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
-        </div>
-        <div class="horizontal-border-wrapper">
-            <div class="horizontal-border"></div>
-        </div>
-        <div class="products-wrapper">
-            <div class="products-card">
-                <img src="img/product1.png" alt="">
-                <div class="products-desc">
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
+            </div>
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
                     <h3>Taśma SMART LED</h3>
-                    <div class="products-price">200.00 zł</div>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
+            </div>
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
+                    <h3>Taśma SMART LED</h3>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
+            </div>
+            <div class="products-wrapper">
+                <div class="products-card">
+                    <img src="img/product1.png" alt="">
+                    <div class="products-desc">
+                        <h3>Taśma SMART LED</h3>
+                        <div class="products-price">200.00 zł</div>
+                    </div>
+                </div>
+                <div class="products-buy">
+                    <h3>Taśma SMART LED</h3>
+                    <p>Niezależne badania nie pozostawiają złudzeń - taśmy BLAZE IT to najlepszy produkt dostępny na rynku! Wybierz ten produkt i ciesz się niezawodnym oraz pięknym oświetleniem!</p>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
                 </div>
             </div>
         </div>
@@ -148,13 +197,13 @@
             <div class="horizontal-border"></div>
         </div>
         <h2>Chcesz otrzymać zniżkę?</h2>
-        <!--TODO SUBMIT-->
         <div class="newsletter-wrapper">
             <div class="newsletter">
-                <iconify-icon icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide" icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide-mobile" icon="ic:outline-local-post-office" style="color: white;" width="80" height="80"></iconify-icon>
                 Chcesz otrzymać 15% zniżki na pierwsze zakupy? Nic prostszego! Po prostu zapisz się do newslettera!
             </div>
-            <form>
+            <form onsubmit="sendNewsletter(); return false;">
                 <input type="text" placeholder="Wprowadź e-mail..." id="newsletter-email">
                 <input type="button" value="ZAPISZ SIĘ" id="newsletter-submit">
             </form>
@@ -165,7 +214,5 @@
     </main>
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-    <!-- Script -->
-    <script src="dist/app.js"></script>
 </body>
 </html>

@@ -513,7 +513,26 @@ main .products-wrapper .products-buy button {
   font-size: 2rem;
   padding: 0.75rem;
 }
-main .products-wrapper .products-card:hover + .products-buy {
+main .products-wrapper .products-buy button:hover {
+  cursor: pointer;
+  color: #FCDC00;
+}
+main .products-wrapper .products-card:active, main .products-wrapper .products-card:hover + .products-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .products-wrapper .products-buy:hover, main .products-wrapper .products-buy:active + .products-buy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,6 +958,62 @@ body {
   }
   main .logos iconify-icon {
     margin: 2rem 3rem 0 3rem;
+  }
+  main .products-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .products-wrapper .products-card {
+    margin: 3rem 1.5rem;
+  }
+  main .products-wrapper .products-card .products-desc {
+    height: 100px;
+  }
+  main .vertical-border-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  main .vertical-border-wrapper .vertical-border {
+    height: 650px;
+  }
+  main .faq-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .faq-wrapper .questions-wrapper .faq .question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .faq-wrapper .questions-wrapper .faq .question h3 {
+    font-size: 2.4rem;
+  }
+  main .faq-wrapper .questions-wrapper .faq .question .expand {
+    width: 5.2rem;
+    height: 5.2rem;
+    font-size: 3rem;
+  }
+  main .faq-wrapper .questions-wrapper .faq .answer {
+    margin-left: 10rem;
+    width: 65%;
+    font-size: 1.4rem;
   }
   .swiper {
     height: 400px;

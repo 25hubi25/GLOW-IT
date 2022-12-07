@@ -10,13 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    <script src="dist/app.js" defer></script>
+    <script type="module" src="dist/app.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo">
             <a href="index.html"><img src="img/logo.png" alt="logo przedstawiające żarówkę"></a>
             <h1><span class="mark">glow <span class="mark-it"> it!</span></span></h1>
+        </div>
+        <div class="hide-mobile" id="desktop-nav">
+            <a href="products.html">PRODUKTY</a>
+            <a href="faq.html">FAQ</a>
+            <a href="faq.html">WSPÓŁPRACA</a>
+            <a href="faq.html">ZWROTY</a>
+            <a href="faq.html">KONTAKT</a>
         </div>
         <div class="buttons">
             <a href="login.html"><iconify-icon icon="carbon:user-avatar" style="color: white;" width="49" height="49"></iconify-icon></a>
@@ -43,99 +50,108 @@
         </div>
     </nav>
     <main>
+        <!--
         <div class="search-wrapper">
             <input type="search" placeholder="Czego szukasz?" id="search-bar">
         </div>
+        -->
         <div class="faq-wrapper">
-            <h2>Bezpieczeństwo</h2>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+            <div class="questions-wrapper">
+                <h2>Bezpieczeństwo</h2>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
             </div>
-            <div class="horizontal-border-wrapper">
-                <div class="horizontal-border"></div>
+            <div class="horizontal-border-wrapper hide">
+                <div class="horizontal-border hide"></div>
             </div>
-            <h2>O nas</h2>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+            <div class="vertical-border-wrapper">
+                <div class="vertical-border hide-mobile"></div>
+            </div>
+            <div class="questions-wrapper">
+                <h2>O nas</h2>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
-            </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
-                    <button class="expand">></button>
+                <div class="faq">
+                    <div class="question">
+                        <h3>Czy produkty <span class="mark">GLOW <span class="mark-it"> IT</span></span> są bezpieczne?</h3>
+                        <button class="expand">></button>
+                    </div>
+                    <div class="answer">
+                        <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
+                    </div>      
                 </div>
-                <div class="answer">
-                    <p>Nasze produkty gwarantują 100% bezpieczeństwa. Posiadamy wszelkiego rodzaju certyfikaty oraz odznaczenia. Asortyment został dokładnie przebadany, a także przetestowany w różnych sytuacjach, co pozwala mieć pewność, że klient może być całkowicie spokojny.</p>
-                </div>      
             </div>
         </div>
         <div class="horizontal-border-wrapper">
             <div class="horizontal-border"></div>
         </div>
         <h2>Chcesz otrzymać zniżkę?</h2>
-        <!--TODO SUBMIT-->
         <div class="newsletter-wrapper">
             <div class="newsletter">
-                <iconify-icon icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide" icon="ic:outline-local-post-office" style="color: white;" width="51" height="51"></iconify-icon>
+                <iconify-icon class="hide-mobile" icon="ic:outline-local-post-office" style="color: white;" width="80" height="80"></iconify-icon>
                 Chcesz otrzymać 15% zniżki na pierwsze zakupy? Nic prostszego! Po prostu zapisz się do newslettera!
             </div>
-            <form>
+            <form onsubmit="sendNewsletter(); return false;">
                 <input type="text" placeholder="Wprowadź e-mail..." id="newsletter-email">
                 <input type="button" value="ZAPISZ SIĘ" id="newsletter-submit">
             </form>
