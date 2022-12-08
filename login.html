@@ -18,11 +18,19 @@
             <a href="index.html"><img src="img/logo.png" alt="logo przedstawiające żarówkę"></a>
             <h1><span class="mark">glow <span class="mark-it"> it!</span></span></h1>
         </div>
+        <div class="hide-mobile" id="desktop-nav">
+            <a href="products.html">PRODUKTY</a>
+            <a href="faq.html">FAQ</a>
+            <a href="faq.html">WSPÓŁPRACA</a>
+            <a href="faq.html">ZWROTY</a>
+            <a href="faq.html">KONTAKT</a>
+        </div>
         <div class="buttons">
-            <a href="login.html"><iconify-icon icon="carbon:user-avatar" style="color: white;" width="49" height="49"></iconify-icon></a>
-            <iconify-icon icon="icons8:shopping-cart" style="color: white;" width="54" height="54"></iconify-icon>
-            <div class="vertical-border"></div>
-            <button class="hamburger"></button>
+            <a href="login.html" id="login-logo"><iconify-icon icon="carbon:user-avatar" style="color: white;" width="49" height="49"></iconify-icon></a>
+            <a href="cart.html"><iconify-icon icon="icons8:shopping-cart" style="color: white;" width="54" height="54"></iconify-icon></a>
+            <p class="number">0</p>
+            <div class="vertical-border hide"></div>
+            <button class="hamburger hide"></button>
         </div>
         <div id="mobile-nav" style="display: none;">
             <div class="horizontal-border-wrapper">
@@ -43,15 +51,18 @@
         </div>
     </nav>
     <main>
-        <div class="panel">
-            <img src="img/logo.png" alt="logo przedstawiające żarówkę" class="logo-img">
-            <form>
-                <input type="text" id="login-email" placeholder="Adres e-mail">
-                <input type="password" id="login-password" placeholder="Hasło">
-                <button id="login-btn">Zaloguj się</button>
-            </form>
-            <p id="forgot-password">Zapomniałeś hasła?</p>
+        <div class="panel-wrapper">
+            <div class="panel">
+                <img src="img/logo.png" alt="logo przedstawiające żarówkę" class="logo-img">
+                <form>
+                    <input type="text" id="login-email" placeholder="Adres e-mail">
+                    <input type="password" id="login-password" placeholder="Hasło">
+                    <button id="login-btn">Zaloguj się</button>
+                </form>
+                <p id="forgot-password">Zapomniałeś hasła?</p>
+            </div>
         </div>
+
         <div class="no-account">
             <button id="login-btn">Zarejestruj się</button>
         </div>

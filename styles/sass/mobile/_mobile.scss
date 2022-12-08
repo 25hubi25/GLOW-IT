@@ -1,5 +1,6 @@
 @import 'mobile-menu';
 @import 'mobile-main';
+@import 'mobile-cart';
 @import 'mobile-products';
 @import 'mobile-faq';
 @import 'mobile-login';
@@ -74,6 +75,20 @@ body {
 
 .logos-wrapper {
     flex-direction: column;
+}
+
+.number {
+    position: absolute;
+    background-color: $yellow;
+    color: $main;
+    @include flex-jcc-aic;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    right: 6.5rem;
+    top: 1.5rem;
 }
 
 @media (max-width: 400px) {

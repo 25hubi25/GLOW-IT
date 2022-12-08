@@ -435,6 +435,62 @@ main form #newsletter-submit {
   margin-left: -5px;
 }
 
+main .card {
+  background-color: #391a4b;
+  border: solid 1px #FCDC00;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .card .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .card .product .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+}
+main .card .product .product-info .product-name {
+  font-size: 1.6rem;
+}
+main .card .product .product-info .product-price {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #FCDC00;
+}
+main .card .product .product-info .product-amount {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+main .card .product .product-info .product-amount .amount-mark {
+  color: #FCDC00;
+}
+main .card .product img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+}
+main .card .summary .final-price {
+  font-size: 2.4rem;
+}
+main .card .summary .final-price .final-cost {
+  color: #FCDC00;
+}
+
 main .products-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,6 +886,28 @@ body {
           flex-direction: column;
 }
 
+.number {
+  position: absolute;
+  background-color: #FCDC00;
+  color: #482260;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  right: 6.5rem;
+  top: 1.5rem;
+}
+
 @media (max-width: 400px) {
   .hide-mobile {
     display: none;
@@ -1018,6 +1096,34 @@ body {
     width: 65%;
     font-size: 1.4rem;
   }
+  main .cart-heading {
+    font-size: 3.2rem;
+  }
+  main .card {
+    padding: 5rem;
+  }
+  main .card .product {
+    padding: 0 10rem;
+  }
+  main .card .product img {
+    width: 20rem;
+    height: 20rem;
+  }
+  main .card .product .product-info .product-name {
+    font-size: 2.4rem;
+  }
+  main .card .product .product-info .product-price {
+    font-size: 3.2rem;
+  }
+  main .card .product .product-info .product-amount {
+    font-size: 3.2rem;
+  }
+  main .card .summary {
+    padding: 0 10rem;
+  }
+  main .card .summary .final-price {
+    font-size: 3.2rem;
+  }
   .swiper {
     height: 400px;
   }
@@ -1026,5 +1132,26 @@ body {
   }
   .horizontal-border {
     width: 90%;
+  }
+  .number {
+    right: 0.5rem;
+  }
+  .panel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .panel-wrapper .panel {
+    width: 50%;
+  }
+  .no-account #login-btn {
+    width: 50rem;
   }
 }

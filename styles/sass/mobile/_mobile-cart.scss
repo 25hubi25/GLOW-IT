@@ -1,0 +1,48 @@
+main {
+    .card {
+        .product {
+            display: flex;
+            .product-info {
+                display: flex;
+                flex-direction: column;
+                margin-left: 2rem;
+                .product-name {
+                    font-size: 1.6rem;
+                }
+                .product-price {
+                    margin-top: 2rem;
+                    font-size: 2rem;
+                    color: $yellow;
+                }
+                .product-amount {
+                    font-size: 2rem;
+                    margin-top: 2rem;
+                    .amount-mark {
+                        color: $yellow;
+                    }
+                }
+            }
+            img {
+                width: 15rem;
+                height: 15rem;
+                border-radius: 1rem;
+            }
+        }
+        .summary {
+            .final-price {
+                font-size: 2.4rem;
+                .final-cost {
+                    color: $yellow;
+                }
+            }
+        }
+        background-color: $darker;
+        border: solid 1px $yellow;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

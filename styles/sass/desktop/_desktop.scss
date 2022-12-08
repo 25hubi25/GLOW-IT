@@ -158,7 +158,36 @@
             }
         }
         
-
+        .cart-heading {
+            font-size: 3.2rem;
+        }
+        .card {
+            padding: 5rem;
+            .product {
+                padding: 0 10rem;
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                }
+                .product-info {
+                    .product-name {
+                        font-size: 2.4rem;
+                    }
+                    .product-price {
+                        font-size: 3.2rem;
+                    }
+                    .product-amount {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            .summary {
+                padding: 0 10rem;
+                .final-price {
+                    font-size: 3.2rem;
+                }
+            }
+        }
     }
     .swiper {
         height: 400px;
@@ -171,4 +200,20 @@
     .horizontal-border {
         width: 90%;
     }
+    .number {
+        right: 0.5rem;
+    }
+    .panel-wrapper {
+        @include flex-jcc-aic;
+        width: 100%;
+        .panel {
+            width: 50%;
+        }
+    }
+    .no-account {
+        #login-btn {
+            width: 50rem;
+        }
+    }
+
 }

@@ -5,8 +5,10 @@ const newsletterSubmit: HTMLInputElement = document.querySelector("#newsletter-s
 newsletterSubmit.addEventListener("click", () => {
     let email:string = (newsletterInput.value);
     if (regexEmail.test(email)) {
+        alert(`Wysłano newsletter na ${email}`);
         console.log(`Wysłano newsletter na ${email}`);
     } else {
-        console.log("Podany email nie jest poprawny.")
+        alert(`Podany email nie jest poprawny.`)
+        console.log("")
     }
 });
