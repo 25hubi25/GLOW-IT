@@ -15,9 +15,8 @@ Projekt aktualnie wykorzystuje:
 Dokładny poradnik dostępny na żądanie w języku czeskim.
 
 ## Status
-Projekt na ten moment nie jest gotowy.
+Projekt jest gotowy.
 
 To Do:
-* Koszyk
 * Searchbar
 * Logowanie
