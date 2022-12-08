@@ -65,5 +65,13 @@ main {
         .products-buy:hover, .products-buy:active + .products-buy {
             @include flex-jcc-aic-fdc;
         }
+        .newsletter-wrapper {
+            .newsletter {
+                .hide-mobile {
+                    display: none;
+                }
+            }
+        }
+
     }
 }

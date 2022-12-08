@@ -606,6 +606,9 @@ main .products-wrapper .products-buy:hover, main .products-wrapper .products-buy
       -ms-flex-direction: column;
           flex-direction: column;
 }
+main .products-wrapper .newsletter-wrapper .newsletter .hide-mobile {
+  display: none;
+}
 
 main .faq-wrapper {
   display: -webkit-box;
@@ -908,14 +911,16 @@ body {
   top: 1.5rem;
 }
 
-@media (max-width: 400px) {
-  .hide-mobile {
-    display: none;
-  }
+.hide-mobile {
+  display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .hide {
     display: none;
+  }
+  .hide-mobile {
+    display: block;
   }
   nav #desktop-nav {
     display: -webkit-box;
